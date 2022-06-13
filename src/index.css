@@ -1,13 +1,42 @@
+@font-face {
+  font-family: 'Sans';
+  src: local('Sans'), url(../public/assets/fonts/PT_Sans-Web-Regular.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Sans';
+  font-weight: 900;
+  src: local('Sans'), url(../public/assets/fonts/PT_Sans-Web-Bold.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Sans';
+  font-weight: 900;
+  font-style: italic;
+  src: local('Sans'), url(../public/assets/fonts/PT_Sans-Web-BoldItalic.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Sans';
+  font-style: italic;
+  src: local('Sans'), url(../public/assets/fonts/PT_Sans-Web-Italic.ttf) format('ttf');
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+  padding:0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.container{
+  padding-left: 10rem;
+  padding-right: 10rem;
+  
+}
+
+
+@media(orientation:portrait) {
+  .container{
+
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
 }
